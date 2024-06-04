@@ -1,0 +1,349 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header, footer {
+    background-color: #556687;
+    color: #ffffff;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a, footer .contact-info {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a.active {
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content .logo-footer {
+    margin-bottom: 10px;
+}
+
+.footer-content .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.footer-content .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+/* Contact Page -----------------------------------------------------*/
+.public {
+    margin-bottom: 20px;
+}
+
+.public img {
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for the image */
+    height: auto;
+    border-radius: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form form .name-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form form .name-fields input {
+    width: 48%;
+}
+
+.contact-form form input, .contact-form form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form form textarea {
+    height: 150px;
+}
+
+.contact-form form button {
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* About Me Page ----------------------------------------------------------*/
+.profile-pic img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.content-box {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.about-me-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.left-section {
+    flex: 1;
+    max-width: 200px;
+    text-align: left;
+}
+
+.left-section .profile-pic {
+    text-align: center;
+}
+
+.left-section .profile-pic img {
+    max-width: 100%;
+}
+
+.left-section h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.right-section {
+    flex: 2;
+    margin-left: 20px;
+    padding-left: 25%;
+}
+
+.collapsible {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+}
+
+.collapsible .arrow {
+    margin-right: 10px;
+}
+
+.collapsible-content {
+    display: none;
+    background-color: #f0f0f0;
+    
+}
+
+.collapsible-content.active {
+    display: block;
+}
+
+/* Portfolio Page ------------------------------------------------------------*/
+.portfolio-projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.portfolio-projects .project {
+    width: 45%;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* .portfolio-projects .project h2 {
+    text-align: center;
+} */
+
+/* Fähigkeiten Page ----------------------------------------------------- */
+.example-image img,
+.example-image video /*unnötig*/ {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+.faehigkeiten-attributes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.faehigkeiten-attributes .attribute {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.attribute h2 {
+    text-align: center;
+}
+
+/* Responsive Design -------------------------------------------------------------------*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header nav a {
+        margin: 5px;
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    /* Kontaktseite -------------------------------------------------- */
+
+    .contact-form form {
+        width: 80%;
+    }
+
+    .contact-form form .name-fields {
+        flex-direction: column;
+    }
+
+    .contact-form form .name-fields input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .public {
+        width: 100%;
+    }
+
+
+    /* About Me Seite -------------------------------------- */
+    .content-box {
+        padding: 10px; /* Reduziertes Padding für kleinere Bildschirme */
+    }
+
+    .about-me-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-section,
+    .right-section {
+        max-width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .right-section {
+        margin-top: 20px;
+    }
+
+    .left-section h3 {
+        text-align: center;
+    }
+
+    .portfolio-projects .project, .faehigkeiten-attributes .attribute {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    header nav a {
+        font-size: 12px; /* Further adjust font size for smaller screens */
+    }
+
+    .public {
+        width: 100%;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+
+    footer .footer-content {
+        padding: 10px;
+    }
+
+    footer .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
