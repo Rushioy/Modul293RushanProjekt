@@ -212,17 +212,16 @@ h1 {
     padding: 15px;
     border-radius: 5px;
     margin: 10px 0;
-    text-align: center;
+    text-align: left;
 }
 
-.portfolio-projects .project .h2 {
+.portfolio-projects .project h2 {
     text-align: center;
-    background-color: red;
 }
 
 /* Fähigkeiten Page ----------------------------------------------------- */
 .example-image img,
-.example-image video /*unnötig*/ {
+.example-video iframe {
     width: 100%;
     height: auto;
     display: block;
