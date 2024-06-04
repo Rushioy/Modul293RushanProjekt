@@ -275,10 +275,14 @@ h1 {
         padding: 10px;
     }
 
+    .branding {
+        text-align: center; /* Firmenname zentrieren */
+    }
+
     header nav {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap; /* Flexibles Layout */
         justify-content: center;
         width: 100%;
     }
@@ -316,7 +320,7 @@ h1 {
     }
 
     .left-section, .right-section {
-        max-width: 100%;
+        width: 100%; /* Flexibles Layout */
         margin-left: 0;
         padding-left: 0;
     }
@@ -340,7 +344,7 @@ h1 {
     }
 
     header nav a {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .public {
@@ -369,80 +373,6 @@ h1 {
         text-align: left;
     }
 }
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    header nav a {
-        font-size: 16px;
-    }
-
-    .public {
-        width: 100%;
-    }
-
-    .contact-form form {
-        width: 100%;
-    }
-
-    footer .footer-content {
-        padding: 10px;
-    }
-
-    footer .social-icons img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .collapsible h4 {
-        text-align: left;
-        font-size: 0.95em;
-    }
-
-    .collapsible-content {
-        text-align: left;
-    }
-}
-
-@media (max-width: 390px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    header nav a {
-        font-size: 14px;
-    }
-
-    .public {
-        width: 100%;
-    }
-
-    .contact-form form {
-        width: 100%;
-    }
-
-    footer .footer-content {
-        padding: 10px;
-    }
-
-    footer .social-icons img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .collapsible h4 {
-        text-align: left;
-        font-size: 0.95em;
-    }
-
-    .collapsible-content {
-        text-align: left;
-    }
-
-}
-
 
 
 
